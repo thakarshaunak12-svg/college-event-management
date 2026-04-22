@@ -1,0 +1,161 @@
+body {
+    background: #0d0d0d;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Neon Text Base */
+h1, h2, p {
+    letter-spacing: 2px;
+}
+
+/* Different neon colors */
+.main-title {
+    font-size: 34px;
+    color: #ff00ff;
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff;
+}
+
+.card h2 {
+    color: #00ffcc;
+    text-shadow:
+        0 0 5px #00ffcc,
+        0 0 10px #00ffcc,
+        0 0 20px #00ffcc;
+}
+
+/* Container */
+.container {
+    margin-top: 100px;
+}
+
+/* Glassmorphism Card */
+.card {
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 30px #00eaff;
+}
+
+/* CLASSY BUTTONS */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 28px;
+
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+
+    color: white;
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s;
+}
+
+/* Neon glow per button */
+.card a:nth-child(2) {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.card a:nth-child(3) {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+a:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 20px #ff00ff;
+}
+
+/* EVENTS SECTION */
+.events {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+/* Event Buttons (BIG NEON STYLE) */
+.event-buttons {
+    margin-top: 40px;
+}
+
+.event-btn {
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 60px;
+    font-size: 42px;
+    font-weight: bold;
+
+    border-radius: 15px;
+    text-decoration: none;
+
+    background: transparent;
+
+    color: transparent;
+    -webkit-text-stroke: 2px;
+
+    letter-spacing: 6px;
+
+    transition: 0.4s;
+}
+
+/* Individual colors */
+.event-btn:nth-child(1) {
+    -webkit-text-stroke-color: #ff0080;
+    text-shadow:
+        0 0 10px #ff0080,
+        0 0 20px #ff0080,
+        0 0 40px #ff0080;
+}
+
+.event-btn:nth-child(2) {
+    -webkit-text-stroke-color: #00eaff;
+    text-shadow:
+        0 0 10px #00eaff,
+        0 0 20px #00eaff,
+        0 0 40px #00eaff;
+}
+
+.event-btn:nth-child(3) {
+    -webkit-text-stroke-color: #00ff88;
+    text-shadow:
+        0 0 10px #00ff88,
+        0 0 20px #00ff88,
+        0 0 40px #00ff88;
+}
+
+/* Hover Glow */
+.event-btn:hover {
+    transform: scale(1.12);
+    filter: brightness(1.3);
+}

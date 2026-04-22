@@ -1,0 +1,17 @@
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 300px;
+}

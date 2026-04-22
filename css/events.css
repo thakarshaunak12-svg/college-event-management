@@ -1,0 +1,12 @@
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: purple;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}

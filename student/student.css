@@ -1,0 +1,182 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+    color: white;
+}
+
+/* ================= CENTER WRAPPER ================= */
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ================= CARD ================= */
+.card {
+    width: 350px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    text-align: center;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
+}
+
+/* ================= HEADINGS ================= */
+h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+h2 {
+    text-align: center;
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+/* ================= INPUTS ================= */
+.card input,
+.card select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(18, 234, 216, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+/* ================= BUTTON ================= */
+button, .btn {
+    display: block;              /* makes centering possible */
+    margin: 15px auto;           /* centers horizontally */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(45deg, purple, blue);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;          /* center text inside */
+    transition: 0.3s;
+    width: fit-content;          /* prevents stretching */
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #ff00ff;
+}
+
+/* ================= LINKS ================= */
+a {
+    display: block;              /* IMPORTANT */
+    margin: 10px auto;           /* center horizontally */
+    text-align: center;          /* center text */
+    color: #ccc;
+    text-decoration: none;
+    width: fit-content;          /* keeps link compact */
+}
+
+a:hover {
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff;
+}
+
+/* ================= HOME GRID ================= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* ================= EVENT CARD ================= */
+.container .card {
+    width: auto;
+    padding: 30px;
+}
+
+/* ================= STATUS ================= */
+.success {
+    color: #00ffcc;
+}
+
+.error {
+    color: #ff4d4d;
+}
+
+/* ================= PROFILE ================= */
+.box {
+    width: 350px;
+    max-width: 90%;
+    margin: 10px;
+}
+
+/* ================= EVENT LIST ================= */
+.event {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+/* ================= FIX BUTTON ================= */
+.btn-top {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* ================= STUDENT PANEL FIX ================= */
+
+/* Make container smaller & centered for panel page */
+.container {
+    max-width: 600px;   /* reduces width */
+    margin: 40px auto;  /* centers properly */
+    gap: 20px;
+}
+
+/* Panel cards (Profile / Events) */
+.option-card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option-card h2 {
+    margin-bottom: 10px;
+}
+
+.option-card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Hover effect */
+.option-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
+}
+
+/* Fix anchor wrapping card */
+.container a {
+    width: 100%;
+}

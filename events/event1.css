@@ -1,0 +1,115 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+    color: white;
+}
+
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 18px;
+    background: linear-gradient(45deg, purple, blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #ff00ff;
+}
+
+/* ================= GRID ================= */
+.events-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
+}
+
+/* ================= TEXT ================= */
+.card h3 {
+    margin-top: 0;
+    color: #00eaff;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ================= APPLY BUTTON ================= */
+.apply-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, purple, blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #ff00ff;
+}
+
+/* ================= EVENT DETAILS PAGE ================= */
+.details-box {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.details-box h2 {
+    color: #00eaff;
+}
+
+.details-box a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, purple, blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
