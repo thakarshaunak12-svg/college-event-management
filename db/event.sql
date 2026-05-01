@@ -111,9 +111,11 @@ INSERT INTO faculty VALUES
 (NULL,'Prof. HMV','Civil','9999966101','hmved@gdec.in','HMV06'),
 (NULL,'Prof. KAV','Civil','9999966102','kaved@gdec.in','KAV06');
 
--- =========================
--- EVENTS (UNCHANGED)
--- =========================
+CALL InsertAllEvents();
+DELIMITER $$
+
+CREATE PROCEDURE InsertAllEvents()
+BEGIN
 
 INSERT INTO events VALUES
 (NULL,'Fun','Snake & Ladder','Classic dice board game','Beside StairCase','20','Prof. PSN','Shaunak','9876543210',NULL),
@@ -153,3 +155,7 @@ INSERT INTO events VALUES
 (NULL,'Sports','Table Tennis','Fast game','Room 2','Free','Prof. BAP','JEEL','9876500008',NULL),
 (NULL,'Sports','Kho-Kho','Chasing game','Ground','Free','Prof. IVP','HARSHIL','9876500009',NULL),
 (NULL,'Sports','Tug of War','Strength game','Ground','Free','Prof. SSP','TEJASH','9876510010',NULL);
+
+END$$
+
+DELIMITER ;
